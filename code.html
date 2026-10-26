@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#785a1a", "secondary": "#775a19", "on-tertiary-container": "#8d897e", "tertiary-fixed": "#e8e2d5", "background": "#fbf9f5", "secondary-container": "#fed488", "primary-fixed-dim": "#c8c6c5", "on-tertiary-fixed-variant": "#4a473d", "on-secondary-fixed-variant": "#5d4201", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-background": "#1b1c1a", "surface-tint": "#5f5e5e", "on-primary-container": "#8a8989", "on-tertiary-fixed": "#1e1c14", "on-secondary-fixed": "#261900", "tertiary": "#0d0c05", "on-surface": "#1b1c1a", "surface-bright": "#fbf9f5", "primary-fixed": "#e5e2e1", "surface-container-highest": "#e4e2de", "secondary-fixed": "#ffdea5", "inverse-surface": "#30312e", "error-container": "#ffdad6", "tertiary-container": "#24221a", "surface-container-high": "#eae8e4", "error": "#ba1a1a", "inverse-primary": "#c8c6c5", "on-primary-fixed-variant": "#474746", "on-primary": "#ffffff", "primary-container": "#222222", "on-surface-variant": "#444748", "surface-container-low": "#f5f3ef", "on-error-container": "#93000a", "outline": "#747878", "surface-dim": "#dbdad6", "outline-variant": "#c4c7c7", "on-primary-fixed": "#1b1c1c", "surface": "#fbf9f5", "surface-container": "#efeeea", "surface-variant": "#e4e2de", "tertiary-fixed-dim": "#cbc6ba", "secondary-fixed-dim": "#e9c176", "primary": "#0b0c0c", "on-secondary": "#ffffff", "inverse-on-surface": "#f2f0ed", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "6rem", "space-md": "1rem", "gutter-desktop": "2.5rem", "margin": "1.25rem", "margin-tablet": "2.5rem", "space-2xl": "4rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-desktop": "5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "title-editorial": [ "Playfair Display" ], "display-hero": [ "Playfair Display" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-lg": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Playfair Display" ], "label-price": [ "Plus Jakarta Sans" ], "label-navigation": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ] }, "fontSize": { "title-editorial": [ "18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-price": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-navigation": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "500" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-primary-container py-2 px-margin text-center"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim">COMPLIMENTARY WORLDWIDE COUTURE DELIVERY ON ORDERS OVER $250 • BESPOKE STITCHING AVAILABLE</p></div><div class="h-28 w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col justify-between py-3"><div class="flex items-center justify-between w-full"><div class="flex items-center gap-space-md"><button aria-label="Open Menu" class="lg:hidden text-on-surface p-1 hover:text-secondary transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps uppercase cursor-pointer hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-base">language</span><span>USD ($)</span><span class="material-symbols-outlined text-xs">expand_more</span></div></div><div class="flex items-center gap-space-sm"><img alt="Zayrah Haute Ethnic Atelier Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UoyeJOf240wRjcorn8M-x-rZ4cpDBvelU5SMIpX7k67tx61zHrm4NQ5Sx_G2qE0t60O9gLqQXIbnr6cNp3E280yrk_C5zhoEN4iTVEBl18_WdEvA4SkCyEq2SPEu9fK6M3UuLkzmceztJxVZLSaLmMSbxW66n34hNVetQ5QE40uXggviXxnFzz3il5KmE6GVwhaNez17Moc5ULzImSasYTwd5JE7Cwf3wdgqYoD8BZhHbB6eW1NFD4QFk0"/><a class="flex flex-col items-center group" data-path="home" href="#"><span class="font-title-editorial text-title-editorial font-medium tracking-[0.25em] text-primary uppercase">ZAYRAH</span><span class="font-label-caps text-label-caps tracking-[0.35em] text-secondary text-[9px] uppercase -mt-1">Haute Atelier</span></a></div><div class="flex items-center gap-space-md"><button aria-label="Search" class="text-on-surface hover:text-secondary transition-colors" type="button"><span class="material-symbols-outlined">search</span></button><a aria-label="Wishlist" class="relative text-on-surface hover:text-secondary transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined">favorite</span><span class="absolute -top-1.5 -right-2 bg-secondary text-on-secondary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a><a aria-label="Bag" class="relative text-on-surface hover:text-secondary transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-primary text-on-primary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span></a><div class="pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-tertiary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFpqVCiYmuCKi_6Rl6iPZEJqma0gvEdGvP2NkuJmJk_goKp6-i9WstdGtNgsh_MB6HYnLjtYWbHUxgsbwvT1vf2jA61Mwu4De9p4roRJCuxDdMpmUG2WsmNmtlrsUFqpZaKGQVhb7gT0tHkMDO8Tvl4bUKSXGLAbKbeprdMeD2Y9WCPQbiXS_WvOaNNLWK81c5RwgX9oKoxkpe6PdvQ-oTXu4izul7YDAGdhERBUBaVVyfUw9i0WFzLQ"/></div></div></div><nav class="hidden lg:flex items-center justify-center gap-space-xl pb-1" data-active-classes="text-primary font-semibold border-b border-secondary"><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="new-arrivals" href="#">New Arrivals</a><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="stitched-suits" href="#">Stitched Suits</a><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="unstitched-lawn" href="#">Unstitched Lawn</a><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="luxury-pret" href="#">Luxury Pret</a><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="velvet-and-silk" href="#">Velvet &amp; Silk</a><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="bespoke-tailoring" href="#">Bespoke Tailoring</a><a class="font-label-navigation text-label-navigation uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 text-secondary" data-path="sale" href="#">Sale</a></nav></div></header><main class="w-full pt-36 bg-surface min-h-[calc(100vh-144px)]"><div class="flex flex-col w-full">
+<!-- Top Subtle Announcement Ticker / Heritage Seal -->
+<section class="w-full bg-surface-container-low border-b border-tertiary-fixed py-2 px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-caps text-[10px] uppercase tracking-[0.2em]">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Spring/Summer 2025 Couture Calendar Now Live</span>
+</div>
+<div class="hidden md:flex items-center gap-space-lg">
+<span>Hand-loomed Pure Silks</span>
+<span>•</span>
+<span>Guild-Certified Master Cutters</span>
+<span>•</span>
+<span>Lahore • Karachi • London • New York</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-semibold">
+<span>Bespoke Virtual Fitting Available</span>
+</div>
+</div>
+</section>
+<!-- 1. Hero Section: Editorial Full-Width Showcase -->
+<section class="relative w-full overflow-hidden bg-surface-container-low min-h-[780px] lg:min-h-[860px] flex items-center">
+<!-- Hero Background Visual Canvas -->
+<div class="absolute inset-0 w-full h-full">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Editorial high-fashion luxury portrait of a Pakistani woman dressed in a magnificent ivory and champagne gold 3-piece formal ensemble. Intricate hand-embroidered zardozi and delicate resham needlework cascade along the neckline and silk dupatta. Studio lighting with warm sunbeams, architectural marble arches softly blurred in the background, soft neutral tones with glowing metallic gold details, haute couture atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7bVR_7mmHnH3HFC6r5OwEenxBo2Qr9vMzIv3izsslf4l-KtF8DZbJqgwJLSsSlRQZYHJHHUbVbKvEJh3WDqepiVskhv7d035R4Ghqiv1UjbCC8wcCSIcIpdSnLBNnRuMpvANHQQQmiBh92umIXX2cFQV7BAKLlW2DeGYVOKyrDPlNTUc7BjEYf7N8Z5dO8Mr-4gggM36dG8Geq5c0p8l17DslJ2hvUt-5HXhwwl8fKjN_A38fYkgPIg')">
+</div>
+<!-- Subtle Luxury Scrim Gradients -->
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent w-full lg:w-3/5"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-3xl">
+<div class="max-w-2xl flex flex-col items-start space-y-space-lg">
+<!-- Micro Badges -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center px-3 py-1 border border-secondary text-secondary font-label-caps text-[10px] tracking-[0.25em] uppercase bg-surface/70 backdrop-blur-sm">
+            Handcrafted in Lahore &amp; Karachi
+          </span>
+<span class="inline-flex items-center px-3 py-1 bg-primary text-surface font-label-caps text-[10px] tracking-[0.25em] uppercase">
+            Limited Atelier Edition
+          </span>
+</div>
+<!-- Headline Block -->
+<div class="space-y-space-xs">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em]">
+            SS • 2025 Couture Edit
+          </p>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight leading-[1.08] font-normal">
+            The Summer Lawn &amp; <br class="hidden sm:inline"/>
+<span class="italic font-normal font-title-editorial text-secondary">Festive Couture '25</span>
+</h1>
+</div>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Exquisite hand-embellished 3-piece ensembles and pure pima lawn fabrics crafted by master artisans. Celebrating heritage needlework adapted for modern global galas.
+        </p>
+<!-- CTA Action Cluster -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto">
+<a class="px-8 py-4 bg-secondary text-primary font-label-navigation text-label-navigation uppercase tracking-[0.18em] font-semibold text-center hover:bg-primary hover:text-surface transition-all duration-300 shadow-sm border border-secondary" href="#">
+            Explore Collection
+          </a>
+<a class="px-8 py-4 bg-surface/80 backdrop-blur-sm text-primary font-label-navigation text-label-navigation uppercase tracking-[0.18em] font-semibold text-center border border-primary hover:bg-primary hover:text-surface transition-all duration-300" href="#custom-tailoring-guide">
+            Custom Tailoring Guide
+          </a>
+</div>
+<!-- Bespoke Guarantee Stats -->
+<div class="pt-space-md grid grid-cols-3 gap-space-lg border-t border-tertiary-fixed w-full max-w-md">
+<div>
+<div class="font-title-editorial text-xl font-medium text-primary">100%</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant">Pure Pima &amp; Silk</div>
+</div>
+<div>
+<div class="font-title-editorial text-xl font-medium text-primary">360 hrs</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant">Hand Resham Work</div>
+</div>
+<div>
+<div class="font-title-editorial text-xl font-medium text-primary">1-on-1</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant">Master Tailor Fit</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Marquee Ticker -->
+<div class="w-full bg-primary text-surface py-3 overflow-hidden border-y border-tertiary-container">
+<div class="flex items-center justify-around gap-8 whitespace-nowrap text-xs font-label-caps uppercase tracking-[0.25em] text-secondary-fixed-dim">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">verified</span> Pure Supima Long-Staple Lawn</span>
+<span class="hidden sm:flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">flare</span> Pure 80g Chiffon Dupattas</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">architecture</span> Hand-Finished Pearl Tassels</span>
+<span class="hidden md:flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">public</span> Complimentary Global Express Delivery</span>
+</div>
+</div>
+<!-- 2. Curated Atelier Categories (4-Column Layout) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-3xl">
+<!-- Header Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em] block mb-space-xs">
+          Artisanal Taxonomy
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Curated Atelier Categories
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Tailored perfection and pristine unstitched weaves, divided by silhouette and textile discipline.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-[0.2em] text-primary hover:text-secondary pb-1 border-b border-secondary transition-colors group" href="#">
+<span>View Complete Lookbook</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Category 4-Column Grid with Crisp 1px Champagne Borders -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Category Card 1 -->
+<div class="group relative flex flex-col bg-surface-container-lowest border border-secondary/40 hover:border-secondary transition-all duration-300 p-3">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Editorial portrait of an impeccably tailored 3-piece emerald green stitched Pakistani formal suit with delicate zari hand-embroidery along the sleeves and hemline, worn by an elegant model holding a gossamer chiffon dupatta, studio backdrop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDZLGrSzkvMiB8YMI2rPT895OMBFzdVI0ezlc940gX4B_WJLp4-xVIA5vyNMtAy0PwwrxYzmhtIN1UQ3JLIHutybmsGHQU2mzkGA-hE7uJwFokbBNyLk1BM84D1ZzjDsRChQTR37UaMhhZLdoObGq9SG6mrtMe_nLrE1Y34Ng2AUVngpkiXPf0Ah8x0uK3dfVGL9G63jNrKNBW1D1FIDBzqoazSaoXoV1MDJulO_3LgjcThgyOJgH5MA')">
+</div>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-label-caps uppercase tracking-widest text-primary border border-tertiary-fixed">
+            Bespoke Stitched
+          </div>
+</div>
+<div class="pt-space-md pb-space-xs flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+              3-Piece Stitched Suits
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Masterfully tailored silhouettes featuring lined kurtas, cigarette trousers, and hand-finished pure chiffon dupattas.
+            </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-2 font-label-navigation text-label-navigation uppercase tracking-wider text-primary group-hover:text-secondary font-medium" href="#">
+<span>Explore Stitched</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="group relative flex flex-col bg-surface-container-lowest border border-secondary/40 hover:border-secondary transition-all duration-300 p-3">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Detailed flat-lay of unstitched pure pima lawn fabric bolts with embroidered floral organza necklines, delicate schiffli borders, and pastel silk prints folded crisply on an alabaster table with brass tailor shears." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAiSYev0Hpmd9k7oPcS304nuWg0x76bi10NYZRbChGuO6_Z1wOuRzRyEs3R3O46gZuqjvt2PJfN6vciCghkN1QtJWzkTKjmQ3EIo7EUoK0LUu3RAWGzPwLjoUnQxlYIRn9MmQRklGxIB42SsRXZhv5zREa7CWvfi7blgldtdYjepa-kSx9H426YyTtSBylh-IhEbKMwYqiANXOA2Bml3wfH8HkE-aM0Tt58ZUfmep_Wf4xpQFnuDQFPg')">
+</div>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-label-caps uppercase tracking-widest text-primary border border-tertiary-fixed">
+            Unstitched Pure Lawn
+          </div>
+</div>
+<div class="pt-space-md pb-space-xs flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+              Unstitched Lawn
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Premium breathable pima lawn accompanied by heavily embroidered neckline patches and laser-cut organza borders.
+            </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-2 font-label-navigation text-label-navigation uppercase tracking-wider text-primary group-hover:text-secondary font-medium" href="#">
+<span>Explore Weaves</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="group relative flex flex-col bg-surface-container-lowest border border-secondary/40 hover:border-secondary transition-all duration-300 p-3">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Regal fashion portrait of a model dressed in deep midnight obsidian black micro-velvet kurta adorned with authentic gold antique tilla dabka embroidery, styled with raw silk flared palazzo pants, dramatic chiaroscuro high luxury lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjaLa1znmpOTRtpiFG-RPwME0TRrkppfJ8OG2cAAAYqnKDVlaYjrZqZyLDVp0BdbhLRGrVnv46Cw-oIn7hd8pZB96YvpounfTnirt87B4sfrDvvLhrxx_zt2umnUyEBRyWNcyz0--LbKv9iciaEJ7M1d-U9Nufnyc9tBpY80SG0EQARUTJrygtQZvmLS6064smrtzHwJN_Sn2nKAvm4ppVbS76vAM4uo7KF0rCEMgoU1gdP22EQDz9bQ')">
+</div>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-label-caps uppercase tracking-widest text-primary border border-tertiary-fixed">
+            Heirloom Velvet
+          </div>
+</div>
+<div class="pt-space-md pb-space-xs flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+              Velvet &amp; Silk Couture
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Regal pure micro-velvet, heavy raw silk tunics with handcrafted metallic tilla threadwork for winter soirées.
+            </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-2 font-label-navigation text-label-navigation uppercase tracking-wider text-primary group-hover:text-secondary font-medium" href="#">
+<span>View Silks</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Category Card 4 -->
+<div class="group relative flex flex-col bg-surface-container-lowest border border-secondary/40 hover:border-secondary transition-all duration-300 p-3">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Modern chic ethnic editorial shot of a woman in an asymmetrical blush pink draped luxury pret kalidar kurta with iridescent Swarovski crystal tassels and hand-stitched South Sea seed pearls, clean studio minimalist ivory setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAR-iVGOtC5AMWC6HhxW5_jnEe4Sgy158wkgsmbVFGmafkcRtcv7WcGSD7y0ZHhuW7i9BO3xBWY3Ow8Imja8Fu37jR8pPXFXKQO_UF35OWRuTtArg0NoBHke33l7bIspFICTnZFvtTy9CUcQHEmHwdSh8mCVwFRfVhWMNPGZ8_LYjTqAMpa8o4Be3UH6Oxhv5DRsUgsWiT3Niwdc_L7AkefeevHFHyEzXgWytmNWzAZ8wZj9Vj36BF3lg')">
+</div>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-label-caps uppercase tracking-widest text-primary border border-tertiary-fixed">
+            Ready-To-Wear
+          </div>
+</div>
+<div class="pt-space-md pb-space-xs flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+              Luxury Pret &amp; Festive
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Contemporary draped cuts, statement pearl embellishments, and ready-to-wear silhouettes tailored for intimate gatherings.
+            </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-2 font-label-navigation text-label-navigation uppercase tracking-wider text-primary group-hover:text-secondary font-medium" href="#">
+<span>Shop Pret</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Featured Product Grid (4-Column High-Fashion Display) -->
+<section class="w-full bg-surface-container-low py-space-3xl border-y border-tertiary-fixed">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Headline & Filter Tabs -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between pb-space-xl border-b border-tertiary-fixed gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em] block mb-1">
+            Hand-Embroidered Signatures
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            The Atelier Edit
+          </h2>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-4 py-2 bg-primary text-surface font-label-navigation text-xs tracking-wider uppercase" type="button">
+            All Editions (24)
+          </button>
+<button class="px-4 py-2 bg-surface text-primary border border-tertiary-fixed hover:border-secondary font-label-navigation text-xs tracking-wider uppercase transition-colors" type="button">
+            3-Piece Stitched
+          </button>
+<button class="px-4 py-2 bg-surface text-primary border border-tertiary-fixed hover:border-secondary font-label-navigation text-xs tracking-wider uppercase transition-colors" type="button">
+            Unstitched Lawn
+          </button>
+<button class="px-4 py-2 bg-surface text-primary border border-tertiary-fixed hover:border-secondary font-label-navigation text-xs tracking-wider uppercase transition-colors" type="button">
+            Luxury Pret
+          </button>
+<button class="px-4 py-2 bg-surface text-primary border border-tertiary-fixed hover:border-secondary font-label-navigation text-xs tracking-wider uppercase transition-colors" type="button">
+            Festive Formals
+          </button>
+</div>
+</div>
+<!-- 4-Column Product Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mt-space-2xl">
+<!-- Product 1 -->
+<div class="group flex flex-col bg-surface border border-tertiary-fixed hover:border-secondary transition-all duration-300">
+<!-- Card Image Frame -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Editorial lookbook shot of a woman in an emerald green handcrafted 3-piece velvet suit with antique bullion zardozi along the sleeves, standing in a regal ivory courtyard with a soft golden backlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1lkq3EyvCF7wGwnvCR5FiHfOLHagDvpvAAVr3LjFSLYqT_Z-gYJDGHnGUNCy6oNbDcZ27scGO4yaj4KNXu4ZR9ou9gtwd0DcdXDO_LJigGb9WJesQrEzQsEs5VvL7hNgKXAqC4JTK22-zB-PbKcSCSIi6s3vbbBXNJbZvGYOm1_SthbR1fOnA_u1XGyidZaLko009s05SY1eUZuofxduSfpV_v7tXkQ8W_wUXDyDSwPVphM_0G8cHDA')">
+</div>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="bg-primary text-surface font-label-caps text-[9px] uppercase tracking-widest px-2 py-0.5">
+                Bestseller
+              </span>
+<span class="bg-secondary text-primary font-label-caps text-[9px] uppercase tracking-widest px-2 py-0.5 font-bold">
+                Master Tailored
+              </span>
+</div>
+<!-- Action Floating Icons -->
+<div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+<button aria-label="Zoom Fabric" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+</div>
+<!-- Quick Stitched / Customization Indicator -->
+<div class="absolute bottom-0 inset-x-0 bg-primary/90 text-surface p-2 text-center text-[10px] font-label-caps uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              Custom Neck &amp; Inseam Available
+            </div>
+</div>
+<!-- Product Details -->
+<div class="p-4 flex flex-col flex-grow justify-between space-y-space-md">
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">
+                Pure Micro-Velvet • 3-Piece Stitched
+              </span>
+<h3 class="font-title-editorial text-title-editorial text-primary line-clamp-1 group-hover:text-secondary transition-colors">
+                Noor-e-Kashmir Velvet Suit
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+                Deep Emerald &amp; Antique Gold Zardozi
+              </p>
+<div class="mt-2 text-[11px] text-outline font-label-caps uppercase tracking-wider">
+                100% Pure Micro Velvet &amp; Silk Brocade
+              </div>
+</div>
+<div class="pt-space-xs border-t border-tertiary-fixed">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">Price (Inclusive Duty)</span>
+<span class="font-label-price text-label-price text-primary font-bold">$295 USD</span>
+</div>
+<button class="w-full py-3 bg-secondary hover:bg-primary hover:text-surface text-primary font-label-navigation text-label-navigation uppercase tracking-[0.16em] font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group flex flex-col bg-surface border border-tertiary-fixed hover:border-secondary transition-all duration-300">
+<!-- Card Image Frame -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="High-fashion model in an unstitched ivory and blush pink floral printed pure Egyptian pima lawn outfit with intricate white chikankari embroidery on the daman, paired with a sheer organza embroidered dupatta." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhPlKdoAz0mfm4glS6JqJAaetdQNPHAGUcscQhqe5AWQ1NFsxi_UWVDXhdhpQjw96GvplRV38S6MHJpzP9gGIugy-MPqCBlT6XbrtpMcJiaT9hmK0NYRpia6xZQQJ81ZDwyA7JbbPv63wwWfelGmNwoxIz6fQkumgENXODrA2DNsY_BuklPohrD_mdE9RUhDJKrehnYFrxXXrDsNXMd9Ui2EXmGkMJKbIcsaD0K1HarmzGFiMZI5myOw')">
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="bg-primary text-surface font-label-caps text-[9px] uppercase tracking-widest px-2 py-0.5">
+                New In
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+<button aria-label="Zoom Fabric" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-primary/90 text-surface p-2 text-center text-[10px] font-label-caps uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              Includes 3.5m Shirt + Embroidered Border
+            </div>
+</div>
+<!-- Product Details -->
+<div class="p-4 flex flex-col flex-grow justify-between space-y-space-md">
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">
+                Luxury Lawn • Unstitched 3-Piece
+              </span>
+<h3 class="font-title-editorial text-title-editorial text-primary line-clamp-1 group-hover:text-secondary transition-colors">
+                Gul-e-Rana Printed Pima Lawn
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+                Ivory &amp; Blush Organza Dupatta
+              </p>
+<div class="mt-2 text-[11px] text-outline font-label-caps uppercase tracking-wider">
+                100% Pure Pima Lawn &amp; Silk Chiffon
+              </div>
+</div>
+<div class="pt-space-xs border-t border-tertiary-fixed">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">Price</span>
+<span class="font-label-price text-label-price text-primary font-bold">$145 USD</span>
+</div>
+<button class="w-full py-3 bg-secondary hover:bg-primary hover:text-surface text-primary font-label-navigation text-label-navigation uppercase tracking-[0.16em] font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group flex flex-col bg-surface border border-tertiary-fixed hover:border-secondary transition-all duration-300">
+<!-- Card Image Frame -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Editorial couture shot of an obsidian black raw silk angrakha suit richly embellished with gold metallic tilla work and hand-knotted pearl closures, standing against a textured warm ivory wall." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZJc4AOtyWuZN5VVlwnUZUIlyoCGdWsFaGHtmiz-ibWPXT2Sv_4h8wCdJgNRA7OSVBwNsOq34Ni4tpBujBod3UQvxITiixi6Bp0c3EVJbjiylds-7uTqW_3tzVkuwI3An-DnpZKAdBaTcmxSpf38LJHCtc4dsKMoAx2yIc2xFmdBDKvyXfOKlUItuqf2mSoUb6GTzQHagWRWsJasFjkeAFPVFXTaC48wMvMN6XqY-JqbB7Fcg7qChysg')">
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="bg-secondary text-primary font-label-caps text-[9px] uppercase tracking-widest px-2 py-0.5 font-bold">
+                -15% OFF
+              </span>
+<span class="bg-primary text-surface font-label-caps text-[9px] uppercase tracking-widest px-2 py-0.5">
+                Archival Edition
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+<button aria-label="Zoom Fabric" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-primary/90 text-surface p-2 text-center text-[10px] font-label-caps uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              Only 4 Pieces Handcrafted Globally
+            </div>
+</div>
+<!-- Product Details -->
+<div class="p-4 flex flex-col flex-grow justify-between space-y-space-md">
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">
+                Raw Silk • Festive Couture
+              </span>
+<h3 class="font-title-editorial text-title-editorial text-primary line-clamp-1 group-hover:text-secondary transition-colors">
+                Mehtab Raw Silk Angrakha
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+                Obsidian Black with Champagne Tilla
+              </p>
+<div class="mt-2 text-[11px] text-outline font-label-caps uppercase tracking-wider">
+                100% Hand-Loomed Rawaan Silk
+              </div>
+</div>
+<div class="pt-space-xs border-t border-tertiary-fixed">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">Archival Price</span>
+<div class="flex items-baseline gap-2">
+<span class="text-xs line-through text-outline font-label-price">$400</span>
+<span class="font-label-price text-label-price text-primary font-bold">$340 USD</span>
+</div>
+</div>
+<button class="w-full py-3 bg-secondary hover:bg-primary hover:text-surface text-primary font-label-navigation text-label-navigation uppercase tracking-[0.16em] font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group flex flex-col bg-surface border border-tertiary-fixed hover:border-secondary transition-all duration-300">
+<!-- Card Image Frame -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Editorial portrait of a Pakistani woman dressed in a champagne gold embroidered chiffon 3-piece formal suit with pearl and beadwork embellishments, draped with a scalloped edge dupatta, soft ambient sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6sneuBZXeIr_iOKM_ZGgt7VSaTqeCv-0a5tHK0VxcuhPEkApf9vtSgMasDqlqE_x8PJQ7W28W3C_FXWSeP-_jRbnlSpBRi6LPYgpUC39_-lSt3DRQkqlJGKAfZNf698cFf20A7cT4fBK7cFxDJsD__755MBpbyP8BSONlHuz4Q3vy0PTLrJSt52QD1kpmYWh4DRcjZLdvwPQMOdwzcaPwwGHczfNq5qXyX7J_OSO8axsn4J6FxB39FA')">
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="bg-secondary text-primary font-label-caps text-[9px] uppercase tracking-widest px-2 py-0.5 font-bold">
+                Ready to Ship
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+<button aria-label="Zoom Fabric" class="w-8 h-8 rounded-full bg-surface/90 text-primary hover:text-secondary flex items-center justify-center shadow-sm backdrop-blur-sm" type="button">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-primary/90 text-surface p-2 text-center text-[10px] font-label-caps uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              Dispatches Next Business Day
+            </div>
+</div>
+<!-- Product Details -->
+<div class="p-4 flex flex-col flex-grow justify-between space-y-space-md">
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">
+                Pure Chiffon • 3-Piece Stitched
+              </span>
+<h3 class="font-title-editorial text-title-editorial text-primary line-clamp-1 group-hover:text-secondary transition-colors">
+                Sultana Embroidered Chiffon
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+                Warm Champagne &amp; Pearl Beading
+              </p>
+<div class="mt-2 text-[11px] text-outline font-label-caps uppercase tracking-wider">
+                100% Pure Chiffon &amp; Silk Slip
+              </div>
+</div>
+<div class="pt-space-xs border-t border-tertiary-fixed">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">Price</span>
+<span class="font-label-price text-label-price text-primary font-bold">$280 USD</span>
+</div>
+<button class="w-full py-3 bg-secondary hover:bg-primary hover:text-surface text-primary font-label-navigation text-label-navigation uppercase tracking-[0.16em] font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Atelier Tailoring Selector Drawer Trigger Banner -->
+<div class="mt-space-2xl bg-surface p-space-lg border border-secondary/50 flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 bg-primary text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">straighten</span>
+</div>
+<div>
+<h4 class="font-title-editorial text-title-editorial text-primary">Unsure of your silhouette sizing?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our digital atelier allows you to submit custom necklines, sleeve contours, and trouser lengths for made-to-measure orders.</p>
+</div>
+</div>
+<button class="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-surface font-label-caps text-label-caps tracking-widest uppercase shrink-0 transition-colors" type="button">
+          Open Digital Tape Measure
+        </button>
+</div>
+</div>
+</section>
+<!-- 4. Fabric & Craftsmanship Highlight Banner (Split Minimalist Section) -->
+<section class="w-full bg-primary-container text-on-primary py-space-3xl" id="custom-tailoring-guide">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Column: High-Detail Craftsmanship Frame -->
+<div class="lg:col-span-5 relative">
+<div class="relative aspect-[4/5] w-full overflow-hidden border border-secondary/40">
+<div class="w-full h-full bg-cover bg-center" data-alt="Extreme macro close-up of master craftsman hands working with fine metallic gold zardozi bullion wire, needlepoint pearl embroidery on lush silk and fine weave pima lawn, dark atmospheric artisan atelier workshop in Lahore." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdydEyKxTEYh4i6wuBIqdjoSztkc0NV9jXoPtdiCQ6QZgXrSMZ2aty_HTR7Ecck3xS-q8uoYTK6R1OgjR2__njR5C4Yjhlc7IxsXInpU-_u093MIs_IxzDyjNNUcuDfu3YPYZZGgkQl8kkhH19tgjHxXJlo9Aer9uT4JGHli7ykdTTjT8w-RZrRY1P51kvrJ4SwEdrSZBp0JYiaiTwes-_IHQIHug0jY_V7yt5F2IaKNVUe_ELaLm3EA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 bg-primary-container/90 backdrop-blur-md border border-secondary/30">
+<span class="font-label-caps text-[9px] uppercase tracking-[0.25em] text-secondary-fixed-dim block mb-1">Authentic Guild Heritage</span>
+<p class="font-title-editorial text-title-editorial text-surface-bright italic">
+                “Every knot tells a story handed down over four generations of Kashmiri master needlecrafters.”
+              </p>
+</div>
+</div>
+<!-- Decorative Floating Stamp -->
+<div class="absolute -bottom-6 -right-6 hidden sm:flex w-24 h-24 rounded-full bg-secondary text-primary items-center justify-center p-3 text-center shadow-lg border border-surface">
+<span class="font-label-caps text-[8px] uppercase tracking-tighter font-bold leading-tight">
+              100% PURE HERITAGE CERTIFIED
+            </span>
+</div>
+</div>
+<!-- Right Column: The Atelier Standard Narrative & Pillars -->
+<div class="lg:col-span-7 flex flex-col space-y-space-xl lg:pl-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-[0.3em] block mb-space-xs">
+              Meticulous Standards • Provenance
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright tracking-tight leading-tight">
+              Century-Old Heritage, <br/>
+<span class="text-secondary-fixed-dim italic font-title-editorial">Contemporary Precision.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-primary-container mt-space-sm leading-relaxed max-w-xl">
+              At ZAYRAH Atelier, each collection starts not on a machine, but in the hands of generational artisans who treat textile weaving, needlework, and silhouette architecture as high art.
+            </p>
+</div>
+<!-- Feature 4-Pillar Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="border-l border-secondary/40 pl-space-md space-y-1">
+<div class="flex items-center gap-2 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-lg">water_drop</span>
+<h4 class="font-title-editorial text-lg text-surface-bright">Pure Pima &amp; Supima Weaves</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                Hypoallergenic, ultra-fine long-staple lawn fibers rigorously tested for soft drape and cooling resilience in tropical heat.
+              </p>
+</div>
+<!-- Pillar 2 -->
+<div class="border-l border-secondary/40 pl-space-md space-y-1">
+<div class="flex items-center gap-2 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-lg">auto_fix_high</span>
+<h4 class="font-title-editorial text-lg text-surface-bright">Zardozi &amp; Resham Craft</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                Genuine metallic bullion wire, antique silver tilla, and hand-dyed mulberry silk floss patiently stitched by master ustaads.
+              </p>
+</div>
+<!-- Pillar 3 -->
+<div class="border-l border-secondary/40 pl-space-md space-y-1">
+<div class="flex items-center gap-2 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-lg">architecture</span>
+<h4 class="font-title-editorial text-lg text-surface-bright">Bespoke Tailoring Protocol</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                Custom cut neckline depths, customized sleeve lengths, and trouser rises crafted to harmonize with your unique posture.
+              </p>
+</div>
+<!-- Pillar 4 -->
+<div class="border-l border-secondary/40 pl-space-md space-y-1">
+<div class="flex items-center gap-2 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-lg">local_shipping</span>
+<h4 class="font-title-editorial text-lg text-surface-bright">Global Courier Courierage</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                Dispatched via express air freight within bespoke jasmine-scented archival boxes, complete with garment care muslin dust covers.
+              </p>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-primary font-label-navigation text-label-navigation uppercase tracking-[0.2em] font-semibold hover:bg-surface hover:text-primary transition-all duration-300" href="#">
+<span>Discover Our Craft Heritage</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Client Testimonial / Editorial Quote Ribbon -->
+<section class="w-full bg-surface-container-high border-b border-tertiary-fixed py-space-3xl">
+<div class="w-full max-w-[1200px] mx-auto px-margin md:px-margin-tablet text-center flex flex-col items-center">
+<!-- Laurel / Seal SVG Motif -->
+<div class="w-12 h-12 text-secondary mb-space-md flex items-center justify-center">
+<svg class="w-full h-full stroke-current stroke-[1.5]" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" r="22" stroke-dasharray="3 3"></circle>
+<path d="M16 24L22 30L32 18"></path>
+</svg>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em] mb-space-sm">
+        International Editorial Critical Acclaim
+      </span>
+<!-- Quote Body -->
+<blockquote class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary max-w-4xl italic font-normal leading-snug">
+        “The stitching precision on the chiffon dupatta and neckline embroidery rivals European couture houses, while honoring centuries of Subcontinental textile wisdom.”
+      </blockquote>
+<!-- Source Attribution -->
+<div class="mt-space-lg flex flex-col items-center">
+<span class="font-title-editorial text-title-editorial text-primary tracking-widest uppercase font-semibold">
+          VOGUE SOUTH ASIA
+        </span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-[0.2em] mt-1">
+          Haute Couture &amp; Heritage Luxury Special Feature
+        </span>
+</div>
+<!-- Trust Badges Row -->
+<div class="mt-space-2xl grid grid-cols-2 md:grid-cols-4 gap-space-xl border-t border-tertiary-fixed pt-space-lg w-full max-w-3xl text-center">
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">15,000+</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant mt-1">Global Patrons</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">48 Hrs</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant mt-1">Express Dispatch</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">100%</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant mt-1">Pure Silk &amp; Pima</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">4.9 / 5</div>
+<div class="font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant mt-1">Atelier Rating</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Measurement & Bespoke Guide Floating Bar Trigger -->
+<div class="w-full bg-surface-container-lowest border-t border-tertiary-fixed py-6 px-margin">
+<div class="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
+<span class="font-label-caps text-xs uppercase tracking-wider text-primary">Online Master Tailors On Duty</span>
+<span class="text-outline text-xs hidden md:inline">•</span>
+<span class="font-body-sm text-xs text-on-surface-variant hidden md:inline">Average consultation reply time: 4 minutes</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 bg-secondary text-primary font-label-caps text-[10px] uppercase tracking-[0.2em] font-semibold hover:bg-primary hover:text-surface transition-colors" onclick="alert('Digital Atelier Consultation: A master tailor is ready to review your exact measurements.')" type="button">
+          Connect With Master Tailor
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction for filter buttons
+  document.querySelectorAll('section button').forEach(button => {
+    button.addEventListener('click', function() {
+      if (this.innerText.includes('ADD TO BAG')) {
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="material-symbols-outlined text-base">check</span> Added to Bag';
+        this.classList.remove('bg-secondary');
+        this.classList.add('bg-primary', 'text-surface');
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.classList.remove('bg-primary', 'text-surface');
+          this.classList.add('bg-secondary');
+        }, 2200);
+      }
+    });
+  });
+</script></main><footer class="w-full bg-primary-container text-on-primary border-t border-tertiary-container"><div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-space-3xl"><div class="lg:col-span-4"><h3 class="font-title-editorial text-title-editorial tracking-[0.2em] uppercase text-surface-bright mb-space-xs">ZAYRAH</h3><p class="font-label-caps text-label-caps tracking-[0.25em] text-secondary-fixed-dim uppercase mb-space-md">Haute Ethnic Atelier</p><p class="font-body-md text-body-md text-on-primary-container max-w-sm mb-space-lg leading-relaxed">Curating quintessential heritage embroideries, raw silks, and artisanal couture craftsmanship for the discerning modern connoisseur worldwide.</p><div class="flex items-center gap-space-md"><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed-dim">Certified Artisanal Craft</span><span class="text-outline text-xs">•</span><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed-dim">Bespoke Master Tailoring</span></div></div><div class="lg:col-span-2"><h4 class="font-label-navigation text-label-navigation tracking-widest uppercase text-surface-bright mb-space-md">Collections</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container"><li class="hover:text-surface-bright transition-colors cursor-pointer">Bridal &amp; Trousseau</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Festive Pret</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Unstitched Edit</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Handcrafted Dupattas</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Limited Edition Silks</li></ul></div><div class="lg:col-span-2"><h4 class="font-label-navigation text-label-navigation tracking-widest uppercase text-surface-bright mb-space-md">Atelier Services</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container"><li class="hover:text-surface-bright transition-colors cursor-pointer">Virtual Stylist Consult</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Custom Measurement Guide</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Bespoke Embellishments</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Fabric Care &amp; Preservation</li><li class="hover:text-surface-bright transition-colors cursor-pointer">Worldwide Shipping</li></ul></div><div class="lg:col-span-4"><h4 class="font-label-navigation text-label-navigation tracking-widest uppercase text-surface-bright mb-space-xs">The Atelier Gazette</h4><p class="font-body-sm text-body-sm text-on-primary-container mb-space-md">Receive private collection previews, trunk show invitations, and bespoke style communiqués.</p><form class="flex flex-col gap-space-sm" onsubmit="return false;"><div class="flex items-center border-b border-on-primary-container focus-within:border-secondary-fixed-dim transition-colors pb-1"><input class="bg-transparent border-none outline-none font-label-caps text-label-caps tracking-widest text-surface-bright placeholder:text-on-primary-container w-full py-2" placeholder="ENTER YOUR EMAIL ADDRESS" type="email"/><button class="bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-label-caps text-label-caps uppercase tracking-widest px-space-md py-2 transition-colors" type="button">JOIN</button></div><p class="font-body-sm text-[10px] text-on-primary-container mt-1">By subscribing, you accept our Privacy Policy and Terms of Atelier Service.</p></form></div></div><div class="border-t border-tertiary-container pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-primary-container"><div class="flex items-center gap-space-md font-label-caps text-[10px] uppercase tracking-wider"><a class="hover:text-surface-bright transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><span>•</span><a class="hover:text-surface-bright transition-colors" data-path="terms-and-conditions" href="#">Terms of Service</a><span>•</span><a class="hover:text-surface-bright transition-colors" data-path="bespoke-tailoring" href="#">Measurement Protocol</a></div><p class="font-body-sm text-xs text-on-primary-container">© 2025 ZAYRAH Atelier. All rights reserved. Handcrafted Heritage Luxury.</p></div></div></footer></body></html>
